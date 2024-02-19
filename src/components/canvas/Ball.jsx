@@ -38,6 +38,10 @@ const BallCanvas = ({ icon }) => {
       <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
+          minAzimuthAngle={-Math.PI / 4}
+          maxAzimuthAngle={Math.PI / 4}
+          minPolarAngle={Math.PI / 4}
+          maxPolarAngle={(Math.PI / 4) * 3}
         />
         <Ball imageUrl={icon} />
       </Suspense>
