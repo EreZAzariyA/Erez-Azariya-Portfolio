@@ -5,7 +5,6 @@ import { services } from '../constants';
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from '../hoc';
 
-
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt
@@ -47,7 +46,7 @@ const About = () => {
         I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js and Three.js. I'm quick learner and collaborate closely with clients to create efficient, scalable and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
