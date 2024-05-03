@@ -22,9 +22,14 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
+import plasbit from "./company/plasbit.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+
+import ea_store from "./ea-store.png";
+import numbers from "./numbers.png";
+import snake from "./snake.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -59,4 +64,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  plasbit,
+  ea_store,
+  numbers,
+  snake
 };

@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { github } from "../assets";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, preview_link }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -40,7 +40,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <div className="flex flex-row justify-between items-center">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <p
+              onClick={() => window.open(preview_link, "_blank")}
+              className="blue-text-gradient underline text-[12px] cursor-pointer"
+            >
+              Visit
+            </p>
+          </div>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
@@ -57,7 +65,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
     </motion.div>
   )
-}
+};
 
 const Works = () => {
   return (
@@ -65,7 +73,7 @@ const Works = () => {
       <motion.div
         variants={textVariant()}
       >
-         <p className={styles.heroSubText}>My Work</p>
+        <p className={styles.heroSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
@@ -74,7 +82,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demo in it. It reflects my ability to solve complex problems, work with different technologies and manage projects effectively
+          Following projects showcase my skills and experience.
+          Each project is briefly described with links to code
+          repositories and live demo in it. 
+          It reflects my ability to solve complex problems,
+          work with different technologies and manage projects effectively
         </motion.p>
       </div>
 
