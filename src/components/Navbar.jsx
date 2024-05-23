@@ -24,7 +24,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className='h-12 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Erez Azariya &nbsp;
-            <span className='md:block hidden'> | Junior Web-Developer</span>
+            <span className='md:block hidden'> | Web-Developer</span>
           </p>
         </Link>
         
