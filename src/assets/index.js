@@ -31,10 +31,6 @@ import ea_store from "./ea-store.png";
 import numbers from "./numbers.png";
 import snake from "./snake.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   backend,
@@ -61,9 +57,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   plasbit,
   ea_store,
   numbers,
