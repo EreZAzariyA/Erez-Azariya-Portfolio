@@ -15,10 +15,12 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText}`}>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Hi, I'm <span className="text-[#915eff]">Erez</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm full stock developer, <br className="sm:block hidden" />
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            I'm full stack developer, <br className="sm:block hidden" />
             building UI/UX & Server side
           </p>
         </div>
